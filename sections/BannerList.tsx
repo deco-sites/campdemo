@@ -1,3 +1,5 @@
+import { Quotes } from "deco-sites/campdemo/loaders/zenquotes.ts";
+
 export interface ListItem {
   text: string;
   bold?: boolean;
@@ -8,6 +10,7 @@ export interface Props {
   title: string;
   description?: string;
   items: ListItem[];
+  quote?: Quotes;
 }
 
 export default function BannerList(props: Props) {
@@ -23,6 +26,7 @@ export default function BannerList(props: Props) {
           </li>
         ))}
       </ul>
+      {props.quote && <p>{props.quote.data[0]}</p>}
     </div>
   );
 }

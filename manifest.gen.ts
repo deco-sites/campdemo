@@ -9,6 +9,8 @@ import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$4 from "./loaders/quotable.ts";
+import * as $$$5 from "./loaders/zenquotes.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/BannerList.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarousel.tsx";
@@ -65,6 +67,8 @@ const manifest = {
     "deco-sites/campdemo/loaders/icons.ts": $$$3,
     "deco-sites/campdemo/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/campdemo/loaders/List/Sections.tsx": $$$1,
+    "deco-sites/campdemo/loaders/quotable.ts": $$$4,
+    "deco-sites/campdemo/loaders/zenquotes.ts": $$$5,
   },
   "sections": {
     "deco-sites/campdemo/sections/Animation/Animation.tsx": $$$$$$0,
