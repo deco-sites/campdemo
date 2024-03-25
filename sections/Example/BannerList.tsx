@@ -1,5 +1,5 @@
-import { Quotes } from "deco-sites/campdemo/loaders/zenquotes.ts";
-import Rating from "../components/daisy/Rating.tsx";
+import { Quotes } from "../../loaders/Example/types.ts";
+import Rating from "../../components/daisy/Rating.tsx";
 import { Chart } from "fresh_charts/mod.ts";
 import { ComponentChildren } from "preact/src/index.js";
 import { Secret } from "apps/website/loaders/secret.ts";

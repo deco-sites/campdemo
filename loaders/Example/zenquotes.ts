@@ -1,6 +1,4 @@
-export interface Quotes {
-  data: string[];
-}
+import { Quotes } from "./types.ts";
 
 export interface Prop {
   quantity?: number;

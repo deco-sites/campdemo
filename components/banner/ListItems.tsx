@@ -1,4 +1,4 @@
-import { ListItem } from "../../sections/BannerList.tsx";
+import { ListItem } from "../../sections/Example/BannerList.tsx";
 
 export default function ListItems(props: { items: ListItem[] }) {
   return (

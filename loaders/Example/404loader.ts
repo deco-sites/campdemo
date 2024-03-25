@@ -1,15 +1,17 @@
-import { Quotes } from "deco-sites/campdemo/loaders/zenquotes.ts";
-
-export interface Prop {
-  quantity?: number;
-}
+import { Quotes } from "./types.ts";
+import { AppContext } from "deco-sites/campdemo/apps/site.ts";
 
 // {"_id":"jbHSeSpkyL5H","content":"Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.","author":"Franklin D. Roosevelt","tags":["Famous Quotes"],"authorSlug":"franklin-d-roosevelt","length":118,"dateAdded":"2021-04-23","dateModified":"2023-04-14"}
 export default async function apiquotables(
-  _prop: Prop,
+  _prop: unknown,
   _req: Request,
-  _ctx: unknown,
-): Promise<Quotes> {
-  await fetch("https://rich-puma-16-d8ebp0p2c7ba.deno.dev/noop?N=5");
-  return { data: [] };
+  _ctx: AppContext,
+): Promise<Quotes | null> {
+  console.log(
+    await _ctx.invoke["deco-sites/campdemo"].loaders.Example.zenquotes({
+      quantity: 1,
+    }),
+  );
+  _ctx.response.status = 404;
+  return Promise.resolve(null);
 }

@@ -1,4 +1,4 @@
-import { Quotes } from "deco-sites/campdemo/loaders/zenquotes.ts";
+import { Quotes } from "./types.ts";
 
 export interface Prop {
   quantity?: number;

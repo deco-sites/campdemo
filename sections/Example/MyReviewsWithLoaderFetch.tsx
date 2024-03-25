@@ -1,4 +1,4 @@
-import Newsletter from "../islands/Newsletter.tsx";
+import Newsletter from "../../islands/Newsletter.tsx";
 
 export interface Props {
   lojaCep: string;
@@ -12,15 +12,17 @@ export interface SectionProps {
   total: number;
 }
 
-export const loader = (props: Props, req: Request) => {
-  const mapa: { [key: string]: { rua: string } } = {
-    "123": { rua: "Rua 123" },
-    "456": { rua: "Rua 456" },
-  };
-  return {
-    ...props,
-    lojaAddress: mapa[props.lojaCep] ?? { rua: "Rua Default" },
-  };
+export const loader = async (props: Props, req: Request) => {
+  try {
+    const response = await fetch(
+      `https://viacep.com.br/ws/${props.lojaCep}/json/`,
+    );
+    const data = await response.json();
+    return { ...props, rua: data.logradouro };
+  } catch (error) {
+    console.error("Error fetching address:", error);
+    return { ...props, rua: "Rua Default" };
+  }
 };
 
 export default function MyReviews(props: SectionProps) {

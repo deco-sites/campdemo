@@ -1,4 +1,4 @@
-import { Quotes } from "deco-sites/campdemo/loaders/zenquotes.ts";
+import { Quotes } from "../../loaders/Example/types.ts";
 
 /**
  * @title {{text}}
