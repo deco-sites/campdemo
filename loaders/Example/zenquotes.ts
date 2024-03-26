@@ -1,3 +1,4 @@
+import { AppContext } from "deco-sites/campdemo/apps/site.ts";
 import { Quotes } from "./types.ts";
 
 export interface Prop {
@@ -7,8 +8,11 @@ export interface Prop {
 export default async function zenquotes(
   prop: Prop,
   _req: Request,
-  _ctx: unknown,
+  ctx: AppContext,
 ): Promise<Quotes> {
+  await ctx.invoke["deco-sites/campdemo"].actions.sendPost({
+    text: "Zen quot was invoked!",
+  });
   const quantity = prop.quantity ?? 1;
   const promises = Array.from({ length: quantity }).map(() =>
     fetch("https://zenquotes.io/api/random")

@@ -3,20 +3,22 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $$$$$$$$$0 from "./actions/send.ts";
+import * as $$$$$$$$$1 from "./actions/sendPost.ts";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$9 from "./loaders/availableIcons.ts";
-import * as $$$10 from "./loaders/enum.ts";
+import * as $$$10 from "./loaders/availableIcons.ts";
+import * as $$$11 from "./loaders/enum.ts";
 import * as $$$0 from "./loaders/Example/404loader.ts";
 import * as $$$1 from "./loaders/Example/errorquote.ts";
 import * as $$$2 from "./loaders/Example/invokeLoader.ts";
-import * as $$$3 from "./loaders/Example/quotable.ts";
-import * as $$$4 from "./loaders/Example/slowquote.ts";
-import * as $$$5 from "./loaders/Example/types.ts";
-import * as $$$6 from "./loaders/Example/zenquotes.ts";
-import * as $$$11 from "./loaders/icons.ts";
-import * as $$$7 from "./loaders/Layouts/ProductCard.tsx";
-import * as $$$8 from "./loaders/List/Sections.tsx";
+import * as $$$3 from "./loaders/Example/mixed.ts";
+import * as $$$4 from "./loaders/Example/quotable.ts";
+import * as $$$5 from "./loaders/Example/slowquote.ts";
+import * as $$$6 from "./loaders/Example/types.ts";
+import * as $$$7 from "./loaders/Example/zenquotes.ts";
+import * as $$$12 from "./loaders/icons.ts";
+import * as $$$8 from "./loaders/Layouts/ProductCard.tsx";
+import * as $$$9 from "./loaders/List/Sections.tsx";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -46,50 +48,52 @@ import * as $$$$$$25 from "./sections/Example/BannerListSimple.tsx";
 import * as $$$$$$26 from "./sections/Example/BannerListSimpleImportCompoent.tsx";
 import * as $$$$$$27 from "./sections/Example/BannerListWithFallbacks.tsx";
 import * as $$$$$$28 from "./sections/Example/BannerListWithFreshChart.tsx";
-import * as $$$$$$29 from "./sections/Example/MyReviewsWithLoaderFetch.tsx";
-import * as $$$$$$30 from "./sections/Example/MyReviewsWithLoaderStatic.tsx";
-import * as $$$$$$31 from "./sections/Example/RandomQuote.tsx";
-import * as $$$$$$32 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$33 from "./sections/Gallery.tsx";
-import * as $$$$$$34 from "./sections/Header/Header.tsx";
-import * as $$$$$$35 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$36 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$37 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$38 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$39 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$40 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$41 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$42 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$43 from "./sections/Miscellaneous/Slide.tsx";
-import * as $$$$$$44 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$45 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$46 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$47 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$48 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$49 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$50 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$51 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$52 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$53 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$54 from "./sections/Reviews.tsx";
-import * as $$$$$$55 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$56 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$57 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$29 from "./sections/Example/BannerListWithIsland.tsx";
+import * as $$$$$$30 from "./sections/Example/MyReviewsWithLoaderFetch.tsx";
+import * as $$$$$$31 from "./sections/Example/MyReviewsWithLoaderStatic.tsx";
+import * as $$$$$$32 from "./sections/Example/RandomQuote.tsx";
+import * as $$$$$$33 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$34 from "./sections/Gallery.tsx";
+import * as $$$$$$35 from "./sections/Header/Header.tsx";
+import * as $$$$$$36 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$37 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$38 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$39 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$40 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$41 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$42 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$43 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$44 from "./sections/Miscellaneous/Slide.tsx";
+import * as $$$$$$45 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$46 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$47 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$48 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$49 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$50 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$51 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$52 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$53 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$54 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$55 from "./sections/Reviews.tsx";
+import * as $$$$$$56 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$57 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$58 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "deco-sites/campdemo/loaders/availableIcons.ts": $$$9,
-    "deco-sites/campdemo/loaders/enum.ts": $$$10,
+    "deco-sites/campdemo/loaders/availableIcons.ts": $$$10,
+    "deco-sites/campdemo/loaders/enum.ts": $$$11,
     "deco-sites/campdemo/loaders/Example/404loader.ts": $$$0,
     "deco-sites/campdemo/loaders/Example/errorquote.ts": $$$1,
     "deco-sites/campdemo/loaders/Example/invokeLoader.ts": $$$2,
-    "deco-sites/campdemo/loaders/Example/quotable.ts": $$$3,
-    "deco-sites/campdemo/loaders/Example/slowquote.ts": $$$4,
-    "deco-sites/campdemo/loaders/Example/types.ts": $$$5,
-    "deco-sites/campdemo/loaders/Example/zenquotes.ts": $$$6,
-    "deco-sites/campdemo/loaders/icons.ts": $$$11,
-    "deco-sites/campdemo/loaders/Layouts/ProductCard.tsx": $$$7,
-    "deco-sites/campdemo/loaders/List/Sections.tsx": $$$8,
+    "deco-sites/campdemo/loaders/Example/mixed.ts": $$$3,
+    "deco-sites/campdemo/loaders/Example/quotable.ts": $$$4,
+    "deco-sites/campdemo/loaders/Example/slowquote.ts": $$$5,
+    "deco-sites/campdemo/loaders/Example/types.ts": $$$6,
+    "deco-sites/campdemo/loaders/Example/zenquotes.ts": $$$7,
+    "deco-sites/campdemo/loaders/icons.ts": $$$12,
+    "deco-sites/campdemo/loaders/Layouts/ProductCard.tsx": $$$8,
+    "deco-sites/campdemo/loaders/List/Sections.tsx": $$$9,
   },
   "sections": {
     "deco-sites/campdemo/sections/Animation/Animation.tsx": $$$$$$0,
@@ -126,40 +130,42 @@ const manifest = {
       $$$$$$27,
     "deco-sites/campdemo/sections/Example/BannerListWithFreshChart.tsx":
       $$$$$$28,
+    "deco-sites/campdemo/sections/Example/BannerListWithIsland.tsx": $$$$$$29,
     "deco-sites/campdemo/sections/Example/MyReviewsWithLoaderFetch.tsx":
-      $$$$$$29,
-    "deco-sites/campdemo/sections/Example/MyReviewsWithLoaderStatic.tsx":
       $$$$$$30,
-    "deco-sites/campdemo/sections/Example/RandomQuote.tsx": $$$$$$31,
-    "deco-sites/campdemo/sections/Footer/Footer.tsx": $$$$$$32,
-    "deco-sites/campdemo/sections/Gallery.tsx": $$$$$$33,
-    "deco-sites/campdemo/sections/Header/Header.tsx": $$$$$$34,
-    "deco-sites/campdemo/sections/Images/BannerGrid.tsx": $$$$$$35,
-    "deco-sites/campdemo/sections/Images/Carousel.tsx": $$$$$$36,
-    "deco-sites/campdemo/sections/Images/ImageGallery.tsx": $$$$$$37,
-    "deco-sites/campdemo/sections/Images/ShoppableBanner.tsx": $$$$$$38,
-    "deco-sites/campdemo/sections/Links/LinkTree.tsx": $$$$$$39,
-    "deco-sites/campdemo/sections/Links/Shortcuts.tsx": $$$$$$40,
-    "deco-sites/campdemo/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$41,
-    "deco-sites/campdemo/sections/Miscellaneous/CookieConsent.tsx": $$$$$$42,
-    "deco-sites/campdemo/sections/Miscellaneous/Slide.tsx": $$$$$$43,
-    "deco-sites/campdemo/sections/Newsletter/Newsletter.tsx": $$$$$$44,
-    "deco-sites/campdemo/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$45,
-    "deco-sites/campdemo/sections/Product/NotFound.tsx": $$$$$$46,
-    "deco-sites/campdemo/sections/Product/NotFoundChallenge.tsx": $$$$$$47,
-    "deco-sites/campdemo/sections/Product/ProductDetails.tsx": $$$$$$48,
-    "deco-sites/campdemo/sections/Product/ProductShelf.tsx": $$$$$$49,
-    "deco-sites/campdemo/sections/Product/ProductShelfTabbed.tsx": $$$$$$50,
-    "deco-sites/campdemo/sections/Product/SearchResult.tsx": $$$$$$51,
-    "deco-sites/campdemo/sections/Product/ShelfWithImage.tsx": $$$$$$52,
-    "deco-sites/campdemo/sections/Product/Wishlist.tsx": $$$$$$53,
-    "deco-sites/campdemo/sections/Reviews.tsx": $$$$$$54,
-    "deco-sites/campdemo/sections/Social/InstagramPosts.tsx": $$$$$$55,
-    "deco-sites/campdemo/sections/Social/WhatsApp.tsx": $$$$$$56,
-    "deco-sites/campdemo/sections/Theme/Theme.tsx": $$$$$$57,
+    "deco-sites/campdemo/sections/Example/MyReviewsWithLoaderStatic.tsx":
+      $$$$$$31,
+    "deco-sites/campdemo/sections/Example/RandomQuote.tsx": $$$$$$32,
+    "deco-sites/campdemo/sections/Footer/Footer.tsx": $$$$$$33,
+    "deco-sites/campdemo/sections/Gallery.tsx": $$$$$$34,
+    "deco-sites/campdemo/sections/Header/Header.tsx": $$$$$$35,
+    "deco-sites/campdemo/sections/Images/BannerGrid.tsx": $$$$$$36,
+    "deco-sites/campdemo/sections/Images/Carousel.tsx": $$$$$$37,
+    "deco-sites/campdemo/sections/Images/ImageGallery.tsx": $$$$$$38,
+    "deco-sites/campdemo/sections/Images/ShoppableBanner.tsx": $$$$$$39,
+    "deco-sites/campdemo/sections/Links/LinkTree.tsx": $$$$$$40,
+    "deco-sites/campdemo/sections/Links/Shortcuts.tsx": $$$$$$41,
+    "deco-sites/campdemo/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$42,
+    "deco-sites/campdemo/sections/Miscellaneous/CookieConsent.tsx": $$$$$$43,
+    "deco-sites/campdemo/sections/Miscellaneous/Slide.tsx": $$$$$$44,
+    "deco-sites/campdemo/sections/Newsletter/Newsletter.tsx": $$$$$$45,
+    "deco-sites/campdemo/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$46,
+    "deco-sites/campdemo/sections/Product/NotFound.tsx": $$$$$$47,
+    "deco-sites/campdemo/sections/Product/NotFoundChallenge.tsx": $$$$$$48,
+    "deco-sites/campdemo/sections/Product/ProductDetails.tsx": $$$$$$49,
+    "deco-sites/campdemo/sections/Product/ProductShelf.tsx": $$$$$$50,
+    "deco-sites/campdemo/sections/Product/ProductShelfTabbed.tsx": $$$$$$51,
+    "deco-sites/campdemo/sections/Product/SearchResult.tsx": $$$$$$52,
+    "deco-sites/campdemo/sections/Product/ShelfWithImage.tsx": $$$$$$53,
+    "deco-sites/campdemo/sections/Product/Wishlist.tsx": $$$$$$54,
+    "deco-sites/campdemo/sections/Reviews.tsx": $$$$$$55,
+    "deco-sites/campdemo/sections/Social/InstagramPosts.tsx": $$$$$$56,
+    "deco-sites/campdemo/sections/Social/WhatsApp.tsx": $$$$$$57,
+    "deco-sites/campdemo/sections/Theme/Theme.tsx": $$$$$$58,
   },
   "actions": {
     "deco-sites/campdemo/actions/send.ts": $$$$$$$$$0,
+    "deco-sites/campdemo/actions/sendPost.ts": $$$$$$$$$1,
   },
   "apps": {
     "deco-sites/campdemo/apps/decohub.ts": $$$$$$$$$$$0,
