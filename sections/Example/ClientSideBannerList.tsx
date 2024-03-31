@@ -1,5 +1,8 @@
 import ClientSideIsland from "../../islands/Example/ClientSideIsland.tsx";
 
-export default function ClientSideBannerList() {
-  return <ClientSideIsland />;
+export interface Props {
+  fast?: boolean
+}
+export default function ClientSideBannerList(props: Props) {
+  return <ClientSideIsland {...props} />;
 }

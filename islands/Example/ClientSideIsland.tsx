@@ -3,20 +3,22 @@ import { invoke } from "deco-sites/campdemo/runtime.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { useEffect } from "preact/hooks";
 
-export default function ClickIsland() {
+export default function ClickIsland(props: {fast?: boolean}) {
   const data = useSignal("");
   useEffect(() => {
     const call = async () => {
       const start = Date.now();
-      while (Date.now() - start < 5000) {
-        // Do some CPU-intensive task here
-        // For example, calculate prime numbers
-        let isPrime = true;
-        const num = 999999999;
-        for (let i = 2; i < num; i++) {
-          if (num % i === 0) {
-            isPrime = false;
-            break;
+      if (!props.fast) {
+        while (Date.now() - start < 5000) {
+          // Do some CPU-intensive task here
+          // For example, calculate prime numbers
+          let isPrime = true;
+          const num = 999999999;
+          for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+              isPrime = false;
+              break;
+            }
           }
         }
       }
@@ -24,7 +26,11 @@ export default function ClickIsland() {
         .slowquote(
           {},
         );
-      data.value = [...quotes.data, dataRandom].join(", ");
+      if (props.fast) {
+        data.value = "CLS";        
+      } else {
+        data.value = [...quotes.data, dataRandom].join(", ");
+      }
     };
     call();
   });
