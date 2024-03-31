@@ -10,6 +10,8 @@ import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $Example_ClickIsland from "./islands/Example/ClickIsland.tsx";
+import * as $Example_ClientSideCPUIsland from "./islands/Example/ClientSideCPUIsland.tsx";
+import * as $Example_ClientSideIsland from "./islands/Example/ClientSideIsland.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Cart_linx from "./islands/Header/Cart/linx.tsx";
 import * as $Header_Cart_nuvemshop from "./islands/Header/Cart/nuvemshop.tsx";
@@ -42,6 +44,8 @@ const manifest = {
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
     "./islands/Example/ClickIsland.tsx": $Example_ClickIsland,
+    "./islands/Example/ClientSideCPUIsland.tsx": $Example_ClientSideCPUIsland,
+    "./islands/Example/ClientSideIsland.tsx": $Example_ClientSideIsland,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Cart/linx.tsx": $Header_Cart_linx,
     "./islands/Header/Cart/nuvemshop.tsx": $Header_Cart_nuvemshop,
