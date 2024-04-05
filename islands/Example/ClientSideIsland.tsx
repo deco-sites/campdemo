@@ -3,7 +3,7 @@ import { invoke } from "deco-sites/campdemo/runtime.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { useEffect } from "preact/hooks";
 
-export default function ClickIsland(props: {fast?: boolean}) {
+export default function ClickIsland(props: { fast?: boolean }) {
   const data = useSignal("");
   useEffect(() => {
     const call = async () => {
@@ -27,7 +27,7 @@ export default function ClickIsland(props: {fast?: boolean}) {
           {},
         );
       if (props.fast) {
-        data.value = "CLS";        
+        data.value = "CLS";
       } else {
         data.value = [...quotes.data, dataRandom].join(", ");
       }

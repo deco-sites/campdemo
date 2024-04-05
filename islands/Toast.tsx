@@ -1,15 +1,14 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { ToastContainer, TypeOptions } from "react-toastify";
 
+// deno-lint-ignore no-explicit-any
 const ToastContainerComponent = ToastContainer as any;
 
 const CloseButton = (
   { closeToast }: {
     closeToast: (e: MouseEvent) => void;
   },
-) => (
-    <span>X</span>
-);
+) => <span>X</span>;
 
 const contextClass = {
   success: "bg-positive-900",

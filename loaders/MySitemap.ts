@@ -7,22 +7,21 @@ export interface Props {
 /**
  * @title Redirects
  */
-export default async function MySitemap(
+export default function MySitemap(
   props: Props,
   _req: Request,
   _ctx: unknown,
-): Promise<Route[]> {
+): Route[] {
+  const routes: Route[] = [{
+    pathTemplate: "/sitemap.xml",
+    isHref: true,
+    handler: {
+      value: {
+        excludePaths: props.excludePaths,
+        __resolveType: "website/handlers/sitemap.ts",
+      },
+    },
+  }];
 
-    const routes: Route[] = [{
-        pathTemplate: "/sitemap.xml",
-        isHref: true,
-        handler: {
-          value: {
-            excludePaths: props.excludePaths,
-            __resolveType: "website/handlers/sitemap.ts",
-          },
-        },
-      }];
-    
   return routes;
 }
