@@ -7,8 +7,8 @@ import * as $$$$$$$$$1 from "./actions/sendPost.ts";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$$$0 from "./flags/multivariate/Messages.ts";
-import * as $$$10 from "./loaders/availableIcons.ts";
-import * as $$$11 from "./loaders/enum.ts";
+import * as $$$12 from "./loaders/availableIcons.ts";
+import * as $$$13 from "./loaders/enum.ts";
 import * as $$$0 from "./loaders/Example/404loader.ts";
 import * as $$$1 from "./loaders/Example/errorquote.ts";
 import * as $$$2 from "./loaders/Example/invokeLoader.ts";
@@ -17,9 +17,11 @@ import * as $$$4 from "./loaders/Example/quotable.ts";
 import * as $$$5 from "./loaders/Example/slowquote.ts";
 import * as $$$6 from "./loaders/Example/types.ts";
 import * as $$$7 from "./loaders/Example/zenquotes.ts";
-import * as $$$12 from "./loaders/icons.ts";
+import * as $$$14 from "./loaders/icons.ts";
 import * as $$$8 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$9 from "./loaders/List/Sections.tsx";
+import * as $$$10 from "./loaders/MyRedirect.ts";
+import * as $$$11 from "./loaders/MySitemap.ts";
 import * as $$$$$$$0 from "./matchers/platform.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
@@ -81,14 +83,15 @@ import * as $$$$$$56 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$57 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$58 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$59 from "./sections/Reviews.tsx";
-import * as $$$$$$60 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$61 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$62 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$60 from "./sections/SEOV3.tsx";
+import * as $$$$$$61 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$62 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$63 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "deco-sites/campdemo/loaders/availableIcons.ts": $$$10,
-    "deco-sites/campdemo/loaders/enum.ts": $$$11,
+    "deco-sites/campdemo/loaders/availableIcons.ts": $$$12,
+    "deco-sites/campdemo/loaders/enum.ts": $$$13,
     "deco-sites/campdemo/loaders/Example/404loader.ts": $$$0,
     "deco-sites/campdemo/loaders/Example/errorquote.ts": $$$1,
     "deco-sites/campdemo/loaders/Example/invokeLoader.ts": $$$2,
@@ -97,9 +100,11 @@ const manifest = {
     "deco-sites/campdemo/loaders/Example/slowquote.ts": $$$5,
     "deco-sites/campdemo/loaders/Example/types.ts": $$$6,
     "deco-sites/campdemo/loaders/Example/zenquotes.ts": $$$7,
-    "deco-sites/campdemo/loaders/icons.ts": $$$12,
+    "deco-sites/campdemo/loaders/icons.ts": $$$14,
     "deco-sites/campdemo/loaders/Layouts/ProductCard.tsx": $$$8,
     "deco-sites/campdemo/loaders/List/Sections.tsx": $$$9,
+    "deco-sites/campdemo/loaders/MyRedirect.ts": $$$10,
+    "deco-sites/campdemo/loaders/MySitemap.ts": $$$11,
   },
   "sections": {
     "deco-sites/campdemo/sections/Animation/Animation.tsx": $$$$$$0,
@@ -170,9 +175,10 @@ const manifest = {
     "deco-sites/campdemo/sections/Product/ShelfWithImage.tsx": $$$$$$57,
     "deco-sites/campdemo/sections/Product/Wishlist.tsx": $$$$$$58,
     "deco-sites/campdemo/sections/Reviews.tsx": $$$$$$59,
-    "deco-sites/campdemo/sections/Social/InstagramPosts.tsx": $$$$$$60,
-    "deco-sites/campdemo/sections/Social/WhatsApp.tsx": $$$$$$61,
-    "deco-sites/campdemo/sections/Theme/Theme.tsx": $$$$$$62,
+    "deco-sites/campdemo/sections/SEOV3.tsx": $$$$$$60,
+    "deco-sites/campdemo/sections/Social/InstagramPosts.tsx": $$$$$$61,
+    "deco-sites/campdemo/sections/Social/WhatsApp.tsx": $$$$$$62,
+    "deco-sites/campdemo/sections/Theme/Theme.tsx": $$$$$$63,
   },
   "matchers": {
     "deco-sites/campdemo/matchers/platform.ts": $$$$$$$0,

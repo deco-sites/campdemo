@@ -2,6 +2,7 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import ImageGallerySlider from "../../components/product/Gallery/ImageSlider.tsx";
 import ProductInfo from "../../components/product/ProductInfo.tsx";
 import NotFound from "../../sections/Product/NotFound.tsx";
+import Cart from "../../islands/CartIsland.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -15,6 +16,7 @@ export default function ProductDetails({ page }: Props) {
 
   return (
     <div class="w-full container py-8 flex flex-col gap-6 lg:py-10">
+      <Cart></Cart>
       <div class="flex flex-col gap-6 lg:flex-row lg:justify-center">
         <ImageGallerySlider
           page={page}

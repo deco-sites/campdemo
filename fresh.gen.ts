@@ -9,6 +9,7 @@ import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx
 import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
+import * as $CartIsland from "./islands/CartIsland.tsx";
 import * as $Example_ClickIsland from "./islands/Example/ClickIsland.tsx";
 import * as $Example_ClientSideCPUIsland from "./islands/Example/ClientSideCPUIsland.tsx";
 import * as $Example_ClientSideIsland from "./islands/Example/ClientSideIsland.tsx";
@@ -28,6 +29,7 @@ import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $ShowMore from "./islands/ShowMore.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $Toast from "./islands/Toast.tsx";
 import * as $WishlistButton_vtex from "./islands/WishlistButton/vtex.tsx";
 import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -43,6 +45,7 @@ const manifest = {
     "./islands/AddToCartButton/vnda.tsx": $AddToCartButton_vnda,
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
+    "./islands/CartIsland.tsx": $CartIsland,
     "./islands/Example/ClickIsland.tsx": $Example_ClickIsland,
     "./islands/Example/ClientSideCPUIsland.tsx": $Example_ClientSideCPUIsland,
     "./islands/Example/ClientSideIsland.tsx": $Example_ClientSideIsland,
@@ -62,6 +65,7 @@ const manifest = {
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/ShowMore.tsx": $ShowMore,
     "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/Toast.tsx": $Toast,
     "./islands/WishlistButton/vtex.tsx": $WishlistButton_vtex,
     "./islands/WishlistButton/wake.tsx": $WishlistButton_wake,
   },
