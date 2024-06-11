@@ -12,7 +12,7 @@ export interface SectionProps {
   total: number;
 }
 
-export const loader = (props: Props, req: Request) => {
+export const loader = (props: Props, _req: Request) => {
   const mapa: { [key: string]: { rua: string } } = {
     "123": { rua: "Rua 123" },
     "456": { rua: "Rua 456" },

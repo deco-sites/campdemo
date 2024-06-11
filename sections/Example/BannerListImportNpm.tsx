@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import currency from "npm:currency-in-words@3.0.1";
 
 /**

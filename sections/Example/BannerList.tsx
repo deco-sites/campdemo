@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import Rating from "../../components/daisy/Rating.tsx";
 import { Chart } from "fresh_charts/mod.ts";
 import { ComponentChildren } from "preact/src/index.js";
@@ -77,7 +77,7 @@ export function LoadingFallback() {
   );
 }
 
-export const loader = (props: Props, req: Request, ctx: AppContext) => {
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   if (!props.quote || props.quote.data.length === 0) {
     ctx.response.status = 404;
   }

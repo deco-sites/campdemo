@@ -12,7 +12,7 @@ export interface SectionProps {
   total: number;
 }
 
-export const loader = async (props: Props, req: Request) => {
+export const loader = async (props: Props, _req: Request) => {
   try {
     const response = await fetch(
       `https://viacep.com.br/ws/${props.lojaCep}/json/`,
@@ -31,9 +31,7 @@ export default function BannerList(props: SectionProps) {
   return (
     <div className="bg-primary p-4">
       <h1>{props.lojaAddress.logradouro}</h1>
-      {props.reviews.slice(0, props.total).map((review, index) => (
-        <div>{review}</div>
-      ))}
+      {props.reviews.slice(0, props.total).map((review) => <div>{review}</div>)}
       {props.reviews.length > props.total && (
         <button {...usePartialSection({ props: { total: props.total + 1 } })}>
           Load More

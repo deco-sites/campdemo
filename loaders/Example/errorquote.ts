@@ -1,4 +1,4 @@
-import { Quotes } from "./types.ts";
+import { Quotes } from "../../types.ts";
 
 export default function apiquotables(
   _prop: unknown,

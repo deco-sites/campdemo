@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import { Secret } from "apps/website/loaders/secret.ts";
 import { Section } from "deco/blocks/section.ts";
 import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";

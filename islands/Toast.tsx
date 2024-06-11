@@ -5,8 +5,8 @@ import { ToastContainer, TypeOptions } from "react-toastify";
 const ToastContainerComponent = ToastContainer as any;
 
 const CloseButton = (
-  { closeToast }: {
-    closeToast: (e: MouseEvent) => void;
+  { _closeToast }: {
+    _closeToast: (e: MouseEvent) => void;
   },
 ) => <span>X</span>;
 

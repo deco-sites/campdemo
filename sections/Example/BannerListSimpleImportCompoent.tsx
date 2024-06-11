@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import ListItems from "../../components/banner/ListItems.tsx";
 /**
  * @title {{text}}

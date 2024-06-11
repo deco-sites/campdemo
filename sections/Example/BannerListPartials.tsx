@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 /**

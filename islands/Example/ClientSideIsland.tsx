@@ -12,11 +12,9 @@ export default function ClickIsland(props: { fast?: boolean }) {
         while (Date.now() - start < 5000) {
           // Do some CPU-intensive task here
           // For example, calculate prime numbers
-          let isPrime = true;
           const num = 999999999;
           for (let i = 2; i < num; i++) {
             if (num % i === 0) {
-              isPrime = false;
               break;
             }
           }

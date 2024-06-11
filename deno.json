@@ -14,7 +14,8 @@
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@4.6.0",
-    "fresh_charts/": "https://deno.land/x/fresh_charts@0.3.1/"
+    "fresh_charts/": "https://deno.land/x/fresh_charts@0.3.1/",
+    "toastify-js": "npm:toastify-js@1.12.0"
   },
   "tasks": {
     "start": "deno task generate-icons && deno task bundle && deno run -A --unstable --env --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",

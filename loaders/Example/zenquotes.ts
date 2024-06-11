@@ -1,5 +1,5 @@
 import { AppContext } from "deco-sites/campdemo/apps/site.ts";
-import { Quotes } from "./types.ts";
+import { Quotes } from "../../types.ts";
 
 export interface Prop {
   quantity?: number;

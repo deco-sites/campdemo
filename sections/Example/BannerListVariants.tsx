@@ -1,5 +1,5 @@
 import type { Messages } from "../../flags/multivariate/Messages.ts";
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 
 /**
  * @title {{text}}

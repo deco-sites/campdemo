@@ -1,4 +1,4 @@
-import { Quotes } from "../../loaders/Example/types.ts";
+import { Quotes } from "../../types.ts";
 import { Chart } from "fresh_charts/mod.ts";
 
 /**

@@ -1,4 +1,4 @@
-import { Quotes } from "./types.ts";
+import { Quotes } from "../../types.ts";
 import { AppContext } from "deco-sites/campdemo/apps/site.ts";
 
 export interface Prop {
